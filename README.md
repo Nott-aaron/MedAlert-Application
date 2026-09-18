@@ -919,6 +919,12 @@ Correct structure:
 
 The screenshots are referenced in this README using relative paths.
 
+<img width="746" height="1600" alt="output1" src="https://github.com/user-attachments/assets/382829be-350f-4fa8-a760-7102615545c5" />
+
+<img width="746" height="1600" alt="output2" src="https://github.com/user-attachments/assets/033b18b9-a4f7-4ed2-af50-25ad6a021ca7" />
+
+
+
 ---
 
 # 26. 📚 Learning Outcomes
