@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#F5FBFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💊 Add Medicine"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_blue"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create a new medicine schedule"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Medicine Name -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine Name"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etMedicineName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Paracetamol"
+            android:inputType="text"
+            android:padding="14dp"
+            android:background="@drawable/card_background"
+            android:layout_marginTop="7dp" />
+
+        <!-- Dosage -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dosage"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="18dp" />
+
+        <EditText
+            android:id="@+id/etDosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 500 mg"
+            android:inputType="text"
+            android:padding="14dp"
+            android:background="@drawable/card_background"
+            android:layout_marginTop="7dp" />
+
+        <!-- Medicine Type -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine Type"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp" />
+
+        <RadioGroup
+            android:id="@+id/radioType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioTablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tablet" />
+
+            <RadioButton
+                android:id="@+id/radioSyrup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Syrup" />
+
+            <RadioButton
+                android:id="@+id/radioCapsule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capsule" />
+
+        </RadioGroup>
+
+        <!-- Frequency -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frequency"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp" />
+
+        <RadioGroup
+            android:id="@+id/radioFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioOnce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Once Daily" />
+
+            <RadioButton
+                android:id="@+id/radioTwice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Twice Daily" />
+
+            <RadioButton
+                android:id="@+id/radioThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Three Times Daily" />
+
+        </RadioGroup>
+
+        <!-- Reminder -->
+
+        <CheckBox
+            android:id="@+id/checkboxReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔔 Reminder Required"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <!-- Save -->
+
+        <Button
+            android:id="@+id/btnSaveMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💾 SAVE MEDICINE"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

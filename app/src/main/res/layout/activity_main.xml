@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backgroundtwo"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null" />
+
+    <!-- Light overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6FFFFFF" />
+
+    <!-- Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:alpha="1.0">
+
+            <!-- MedAlert Title -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💊 MedAlert"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:alpha="1.0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicine Reminder"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:alpha="1.0"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Student Details -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFFFF"
+                android:padding="18dp"
+                android:elevation="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STUDENT DETAILS"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:alpha="1.0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spencer Fernandes"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:alpha="1.0"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USN: 25MCAR0123"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:alpha="1.0" />
+
+            </LinearLayout>
+
+            <!-- Dashboard -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicine Dashboard"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:alpha="1.0"
+                android:layout_marginTop="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your scheduled medicines"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:alpha="1.0"
+                android:layout_marginBottom="15dp" />
+
+            <!-- Medicine Information -->
+
+            <TextView
+                android:id="@+id/tvMedicineList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp"
+                android:text="No medicines scheduled yet."
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:background="#FFFFFFFF"
+                android:padding="20dp"
+                android:gravity="center_vertical"
+                android:alpha="1.0"
+                android:elevation="4dp" />
+
+            <!-- Add Medicine -->
+
+            <Button
+                android:id="@+id/btnAddMedicine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="＋  ADD MEDICINE"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="18dp" />
+
+            <!-- Fragment Container -->
+
+            <FrameLayout
+                android:id="@+id/fragmentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
